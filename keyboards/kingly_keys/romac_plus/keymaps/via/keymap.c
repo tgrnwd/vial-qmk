@@ -1,5 +1,7 @@
 #include QMK_KEYBOARD_H
 
+#define ____ KC_TRNS
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(
 		KC_7,  KC_8,  KC_9,
@@ -9,9 +11,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	),
   
 	[1] = LAYOUT(
-		RGB_MOD,  KC_HOME,  KC_PGUP,
-		KC_TRNS,  KC_END,   KC_PGDN,
-		KC_TRNS,  KC_TRNS,  KC_TRNS,
-		KC_TRNS,  KC_TRNS,  KC_ENT
+		____, ____,    ____,
+		____, ____,    ____,
+		____, ____,    ____,
+		____, ____,    ____,
+	),
+	  
+	[2] = LAYOUT(
+		____, ____,    ____,
+		____, ____,    ____,
+		____, ____,    ____,
+		____, ____,    ____,
+	),
+	  
+	[3] = LAYOUT(
+		____, ____,    ____,
+		____, ____,    ____,
+		____, ____,    ____,
+		____, ____,    ____,
 	)
 };
